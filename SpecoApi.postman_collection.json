@@ -1,0 +1,270 @@
+{
+	"info": {
+		"_postman_id": "be43289e-84fd-48ef-831d-958765d6ae57",
+		"name": "SpecoApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Onboarding",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://9ar8okajag.execute-api.ap-south-1.amazonaws.com/dev/onboarding",
+					"protocol": "https",
+					"host": [
+						"9ar8okajag",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"onboarding"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddDoctorList",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"Dr. Viral Vyas\",\"registrationno\":\"94561902\",\"practice\":\"M.D,Physician\",\"institute\":\"Medical Institute\",\"experience\":\"12yrs\",\"qualification\":\"M.B.B.S\",\"phone\":\"123456789\",\"procurement\":\"2018\",\"overview\":\"Doctor with great experience\",\"status\":\"today\",\"img\":\"image2.jpg\",\"ongoingpatient\":\"12+\",\"treatedpatient\":\"13+\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://9ar8okajag.execute-api.ap-south-1.amazonaws.com/dev/doctor",
+					"protocol": "https",
+					"host": [
+						"9ar8okajag",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"doctor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetDoctorList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://9ar8okajag.execute-api.ap-south-1.amazonaws.com/dev/doctor",
+					"protocol": "https",
+					"host": [
+						"9ar8okajag",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"doctor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetDoctorListById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://9ar8okajag.execute-api.ap-south-1.amazonaws.com/dev/doctor/1",
+					"protocol": "https",
+					"host": [
+						"9ar8okajag",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"doctor",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Paymentplans",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://9ar8okajag.execute-api.ap-south-1.amazonaws.com/dev/paymentplans",
+					"protocol": "https",
+					"host": [
+						"9ar8okajag",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"paymentplans"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddClinicDetails",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"clinicname\":\"shreenathji\",\"registrationno\":\"1234\",\"location\":\"malad\",\"aadharcard\":\"123456789\",\"emailid\":\"jinal@gmail.com\",\"qualificationname\":\"MBA\",\"phoneNumber\":\"1234567890\",\"institutename\":\"abc\",\"clinictype\":\"dental\",\"procurementyear\":\"2020\",\"yearsofpractice\":\"12years\",\"associatedfacilites\":\"abx\",\"clinicregistration\":\"link\",\"docname\":\"abc\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://9ar8okajag.execute-api.ap-south-1.amazonaws.com/dev/clinic",
+					"protocol": "https",
+					"host": [
+						"9ar8okajag",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"clinic"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetClinicDetails",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://9ar8okajag.execute-api.ap-south-1.amazonaws.com/dev/clinic",
+					"protocol": "https",
+					"host": [
+						"9ar8okajag",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"clinic"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetClinicById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://9ar8okajag.execute-api.ap-south-1.amazonaws.com/dev/clinic/1",
+					"protocol": "https",
+					"host": [
+						"9ar8okajag",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"clinic",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateClinicById",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"clinicname\":\"shreeji\",\"registrationno\":\"1234\",\"location\":\"malad\",\"aadharcard\":\"123456789\",\"emailid\":\"jinal@gmail.com\",\"qualificationname\":\"MBA\",\"phoneNumber\":\"1234567890\",\"institutename\":\"abc\",\"clinictype\":\"dental\",\"procurementyear\":\"2020\",\"yearsofpractice\":\"12years\",\"associatedfacilites\":\"abx\",\"clinicregistration\":\"link\",\"docname\":\"abc\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://9ar8okajag.execute-api.ap-south-1.amazonaws.com/dev/clinic/1",
+					"protocol": "https",
+					"host": [
+						"9ar8okajag",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"clinic",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteClinicById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://9ar8okajag.execute-api.ap-south-1.amazonaws.com/dev/clinic/1",
+					"protocol": "https",
+					"host": [
+						"9ar8okajag",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"clinic",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
